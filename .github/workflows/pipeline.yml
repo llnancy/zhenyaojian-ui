@@ -3,10 +3,11 @@ name: CI-CD
 on:
   push:
     branches: [vue-antd-admin]
+  workflow_dispatch:
 
 env:
   TZ: Asia/Shanghai
-  GITEE_REPO_ADDRESS: gitee.com/llnancy/zhenyaojian-pages.git
+  GITEE_REPO_ADDRESS: gitee.com/llnancy/zhenyaojian-ui.git
 
 jobs:
   build:
